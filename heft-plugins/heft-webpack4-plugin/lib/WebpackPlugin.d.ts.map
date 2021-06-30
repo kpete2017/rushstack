@@ -1,0 +1,1 @@
+{"version":3,"file":"WebpackPlugin.d.ts","sourceRoot":"","sources":["../src/WebpackPlugin.ts"],"names":[],"mappings":"AAMA,OAAO,KAAK,EACV,iBAAiB,EACjB,WAAW,EAIX,WAAW,EAEZ,MAAM,iBAAiB,CAAC;AAczB;;GAEG;AACH,qBAAa,aAAc,YAAW,WAAW;IAC/C,SAAgB,UAAU,EAAE,MAAM,CAAe;IAE1C,KAAK,CAAC,WAAW,EAAE,WAAW,EAAE,iBAAiB,EAAE,iBAAiB,GAAG,IAAI;YA0CpE,gBAAgB;IAmJ9B,OAAO,CAAC,WAAW;CAapB"}

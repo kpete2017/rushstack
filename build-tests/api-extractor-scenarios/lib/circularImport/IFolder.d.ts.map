@@ -1,0 +1,1 @@
+{"version":3,"file":"IFolder.d.ts","sourceRoot":"","sources":["../../src/circularImport/IFolder.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAEhC,cAAc;AACd,qBAAa,OAAO;IAClB,gBAAgB,EAAE,OAAO,GAAG,SAAS,CAAC;IACtC,KAAK,EAAE,KAAK,EAAE,CAAC;CAChB"}

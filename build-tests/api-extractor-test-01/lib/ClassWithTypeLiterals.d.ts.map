@@ -1,0 +1,1 @@
+{"version":3,"file":"ClassWithTypeLiterals.d.ts","sourceRoot":"","sources":["../src/ClassWithTypeLiterals.ts"],"names":[],"mappings":"AAGA;;;GAGG;AACH,qBAAa,qBAAqB;IAChC,uBAAuB;IAChB,OAAO,CAAC,MAAM,EAAE;QAAE,CAAC,EAAE,MAAM,CAAC;QAAC,CAAC,EAAE,MAAM,CAAA;KAAE,GAAG,IAAI;IAEtD,2BAA2B;IACpB,OAAO,IAAI;QAAE,UAAU,EAAE,qBAAqB,CAAC;QAAC,QAAQ,EAAE,MAAM,MAAM,CAAA;KAAE,GAAG,SAAS;CAG5F"}

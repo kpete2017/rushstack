@@ -1,0 +1,1 @@
+{"version":3,"file":"SubclassWithImport.d.ts","sourceRoot":"","sources":["../src/SubclassWithImport.ts"],"names":[],"mappings":"AAGA,OAAO,EAAW,gBAAgB,EAAE,MAAM,uBAAuB,CAAC;AAElE,OAAO,EAAE,sBAAsB,EAAE,MAAM,0BAA0B,CAAC;AAElE;;;GAGG;AACH,qBAAa,kBAAmB,SAAQ,sBAAuB,YAAW,gBAAgB;IAEjF,IAAI,IAAI,IAAI;CAGpB"}

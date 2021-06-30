@@ -1,0 +1,1 @@
+{"version":3,"file":"variableDeclarations.d.ts","sourceRoot":"","sources":["../src/variableDeclarations.ts"],"names":[],"mappings":"AAGA,aAAa;AACb,eAAO,MAAM,QAAQ,EAAE,MAAgB,CAAC;AAExC,cAAc;AACd,yBAAiB,2BAA2B,CAAC;IAC3C,gBAAgB;IACT,IAAI,QAAQ,EAAE,MAAM,EAAO,CAAC;CACpC"}

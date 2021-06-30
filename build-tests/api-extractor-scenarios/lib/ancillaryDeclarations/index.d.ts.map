@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../src/ancillaryDeclarations/index.ts"],"names":[],"mappings":"AAGA,gBAAgB;AAChB,MAAM,WAAW,eAAe;IAC9B,KAAK,EAAE,MAAM,CAAC;CACf;AAED,cAAc;AACd,qBAAa,OAAO;IAClB,gBAAgB;IAChB,IAAW,MAAM,IAAI,eAAe,CAEnC;IAED,IAAW,MAAM,CAAC,KAAK,EAAE,eAAe,EAAI;CAC7C"}

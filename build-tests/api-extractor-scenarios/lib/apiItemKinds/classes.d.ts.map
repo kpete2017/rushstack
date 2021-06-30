@@ -1,0 +1,1 @@
+{"version":3,"file":"classes.d.ts","sourceRoot":"","sources":["../../src/apiItemKinds/classes.ts"],"names":[],"mappings":"AAGA,cAAc;AACd,8BAAsB,aAAa;aACjB,MAAM,IAAI,IAAI;CAC/B;AAED,cAAc;AACd,qBAAa,WAAW;IACf,MAAM,IAAI,IAAI;IAErB,IAAW,gBAAgB,IAAI,MAAM,CAEpC;IAED,IAAW,iBAAiB,IAAI,MAAM,CAErC;IACD,IAAW,iBAAiB,CAAC,KAAK,EAAE,MAAM,EAAI;CAC/C"}

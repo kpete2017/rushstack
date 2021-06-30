@@ -1,0 +1,1 @@
+{"version":3,"file":"mockTransformModule1.js","sourceRoot":"","sources":["../../../../../src/test/project1/a/b/mockTransformModule1.ts"],"names":[],"mappings":";AAAA,MAAM,CAAC,OAAO,GAAG;IACf,WAAW,EAAE,KAAK;CACnB,CAAC","sourcesContent":["module.exports = {\r\n  moduleValue: 'zzz'\r\n};\r\n"]}

@@ -1,0 +1,7 @@
+import { PackageManagerName } from '../api/packageManager/PackageManager';
+import { BaseShrinkwrapFile } from './base/BaseShrinkwrapFile';
+import { PackageManagerOptionsConfigurationBase } from '../api/RushConfiguration';
+export declare class ShrinkwrapFileFactory {
+    static getShrinkwrapFile(packageManager: PackageManagerName, packageManagerOptions: PackageManagerOptionsConfigurationBase, shrinkwrapFilename: string): BaseShrinkwrapFile | undefined;
+}
+//# sourceMappingURL=ShrinkwrapFileFactory.d.ts.map

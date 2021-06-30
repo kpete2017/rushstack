@@ -1,0 +1,1 @@
+{"version":3,"file":"setupJestPlugin.d.ts","sourceRoot":"","sources":["../../src/scripts/setupJestPlugin.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,iBAAiB,EAAE,qBAAqB,EAAE,MAAM,iBAAiB,CAAC;AAEhF,wBAAsB,QAAQ,CAAC,OAAO,EAAE,iBAAiB,CAAC,qBAAqB,CAAC,GAAG,OAAO,CAAC,IAAI,CAAC,CAa/F"}

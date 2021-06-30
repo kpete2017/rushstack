@@ -1,0 +1,1 @@
+{"version":3,"file":"TypeReferencesInAedoc.d.ts","sourceRoot":"","sources":["../src/TypeReferencesInAedoc.ts"],"names":[],"mappings":"AAGA;;;GAGG;AACH,qBAAa,qBAAqB;IAChC;;;;OAIG;IACI,QAAQ,CAAC,IAAI,EAAE,qBAAqB,GAAG,qBAAqB;IAInE,yEAAyE;IAClE,SAAS,CAAC,IAAI,EAAE,qBAAqB,GAAG,qBAAqB;IAIpE;;OAEG;IACI,SAAS,CAAC,IAAI,EAAE,qBAAqB,GAAG,qBAAqB;CAGrE"}

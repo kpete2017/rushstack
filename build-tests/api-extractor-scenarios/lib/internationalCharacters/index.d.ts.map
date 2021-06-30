@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../src/internationalCharacters/index.ts"],"names":[],"mappings":"AAGA,cAAc;AACd,qBAAa,MAAM;IACV,OAAO,CAAC,MAAM,EAAE,MAAM,GAAG,MAAM;IAI/B,eAAe,CAAC,CAAC,GAAG,MAAM,KAAK,IAAI;IAGnC,YAAY,IAAI,IAAI;CAC5B;AAED,OAAO,EAAE,MAAM,IAAI,MAAM,EAAE,CAAC"}

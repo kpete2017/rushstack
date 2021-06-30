@@ -1,0 +1,1 @@
+{"version":3,"file":"InspectAction.d.ts","sourceRoot":"","sources":["../../src/cli/InspectAction.ts"],"names":[],"mappings":"AAKA,OAAO,EAAE,gBAAgB,EAAE,MAAM,oBAAoB,CAAC;AAGtD,qBAAa,aAAc,SAAQ,gBAAgB;IACjD,OAAO,CAAC,eAAe,CAA4B;;IAYnD,SAAS,CAAC,kBAAkB,IAAI,IAAI;cAUpB,SAAS,IAAI,OAAO,CAAC,IAAI,CAAC;CAU3C"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"Rushell.d.ts","sourceRoot":"","sources":["../src/Rushell.ts"],"names":[],"mappings":"AAWA;;;GAGG;AACH,MAAM,WAAW,qBAAqB;IACpC;;OAEG;IACH,KAAK,EAAE,MAAM,CAAC;CACf;AAED;;;GAGG;AACH,qBAAa,OAAO;IACX,OAAO,CAAC,MAAM,EAAE,MAAM,GAAG,qBAAqB;IAQrD,OAAO,CAAC,aAAa;IAmBrB,OAAO,CAAC,gBAAgB;CAkBzB"}

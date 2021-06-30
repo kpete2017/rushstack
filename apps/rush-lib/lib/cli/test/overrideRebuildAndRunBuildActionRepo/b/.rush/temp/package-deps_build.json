@@ -1,0 +1,9 @@
+{
+  "files": {
+    "a/package.json": "f00575e3099adb2b6edeb905dcbb47281693bba5",
+    "b/package.json": "d3c148830da0c530c647343ab0314bd2e53a5675",
+    "common/config/rush/command-line.json": "8cccb52fb9edc5a750f870070126cd56139c83e0",
+    "rush.json": "f39da1606c4e37d21c0e36368871ca19bddc5d92"
+  },
+  "arguments": "fake_build_task_but_works_with_mock "
+}

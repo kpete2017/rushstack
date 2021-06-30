@@ -1,0 +1,1 @@
+//# sourceMappingURL=mockTransformModule2.d.ts.map

@@ -44,6 +44,7 @@ export class ChangeAction extends BaseRushAction {
   private _targetBranchName: string | undefined;
 
   public constructor(parser: RushCommandLineParser) {
+    console.log('->', 'ChangeAction');
     const documentation: string[] = [
       'Asks a series of questions and then generates a <branchname>-<timestamp>.json file ' +
         'in the common folder. The `publish` command will consume these files and perform the proper ' +
@@ -84,6 +85,7 @@ export class ChangeAction extends BaseRushAction {
   }
 
   public onDefineParameters(): void {
+    console.log('->', 'ChangeAction onDefineParameters');
     const BULK_LONG_NAME: string = '--bulk';
     const BULK_MESSAGE_LONG_NAME: string = '--message';
     const BULK_BUMP_TYPE_LONG_NAME: string = '--bump-type';
@@ -147,6 +149,7 @@ export class ChangeAction extends BaseRushAction {
 
   public async runAsync(): Promise<void> {
     console.log(`The target branch is ${this._targetBranch}`);
+    console.log('->', 'ChangeAction runAsync');
 
     if (this._verifyParameter.value) {
       const errors: string[] = [
@@ -191,7 +194,6 @@ export class ChangeAction extends BaseRushAction {
       ) {
         throw new Error(
           `The ${this._bulkChangeBumpTypeParameter.longName} and ${this._bulkChangeMessageParameter.longName} ` +
-            `parameters must provided if the ${this._bulkChangeParameter.longName} flag is provided. If the value ` +
             `"${ChangeType[ChangeType.none]}" is provided to the ${
               this._bulkChangeBumpTypeParameter.longName
             } ` +
@@ -281,6 +283,7 @@ export class ChangeAction extends BaseRushAction {
   }
 
   private _generateHostMap(): Map<string, string> {
+    console.log('->', 'ChangeAction _generateHostMap');
     const hostMap: Map<string, string> = new Map<string, string>();
     this.rushConfiguration.projects.forEach((project) => {
       let hostProjectName: string = project.packageName;
@@ -296,6 +299,7 @@ export class ChangeAction extends BaseRushAction {
   }
 
   private _verify(): void {
+    console.log('->', 'ChangeAction _verify');
     const changedPackages: string[] = this._getChangedPackageNames();
     if (changedPackages.length > 0) {
       this._validateChangeFile(changedPackages);
@@ -313,6 +317,7 @@ export class ChangeAction extends BaseRushAction {
   }
 
   private _getChangedPackageNames(): string[] {
+    console.log('->', 'ChangeAction _getChangedPackageNames');
     const changedFolders: string[] | undefined = this._git.getChangedFolders(
       this._targetBranch,
       !this._noFetchParameter.value
@@ -346,17 +351,20 @@ export class ChangeAction extends BaseRushAction {
   }
 
   private _validateChangeFile(changedPackages: string[]): void {
+    console.log('->', 'ChangeAction _validateChangeFile');
     const files: string[] = this._getChangeFiles();
     ChangeFiles.validate(files, changedPackages, this.rushConfiguration);
   }
 
   private _getChangeFiles(): string[] {
+    console.log('->', 'ChangeAction _getChangeFiles');
     return this._git.getChangedFiles(this._targetBranch, true, `common/changes/`).map((relativePath) => {
       return path.join(this.rushConfiguration.rushJsonFolder, relativePath);
     });
   }
 
   private _hasProjectChanged(changedFolders: string[], projectFolder: string): boolean {
+    console.log('->', 'ChangeAction _hasProjectChanged');
     for (const folder of changedFolders) {
       if (Path.isUnderOrEqual(folder, projectFolder)) {
         return true;
@@ -374,6 +382,7 @@ export class ChangeAction extends BaseRushAction {
     sortedProjectList: string[],
     existingChangeComments: Map<string, string[]>
   ): Promise<Map<string, IChangeFile>> {
+    console.log('->', 'ChangeAction _promptForChangeFileData');
     const changedFileData: Map<string, IChangeFile> = new Map<string, IChangeFile>();
 
     for (const projectName of sortedProjectList) {
@@ -409,6 +418,7 @@ export class ChangeAction extends BaseRushAction {
     packageName: string,
     existingChangeComments: Map<string, string[]>
   ): Promise<IChangeInfo | undefined> {
+    console.log('->', 'ChangeAction _askQuestion');
     console.log(`${os.EOL}${packageName}`);
     const comments: string[] | undefined = existingChangeComments.get(packageName);
     if (comments) {
@@ -447,6 +457,7 @@ export class ChangeAction extends BaseRushAction {
     promptModule: inquirerTypes.PromptModule,
     packageName: string
   ): Promise<IChangeInfo | undefined> {
+    console.log('->', 'ChangeAction _promptForComments');
     const bumpOptions: { [type: string]: string } = this._getBumpOptions(packageName);
     const { comment }: { comment: string } = await promptModule({
       name: 'comment',
@@ -483,6 +494,7 @@ export class ChangeAction extends BaseRushAction {
   }
 
   private _getBumpOptions(packageName?: string): { [type: string]: string } {
+    console.log('->', 'ChangeAction _getBumpOptions');
     let bumpOptions: { [type: string]: string } =
       this.rushConfiguration && this.rushConfiguration.hotfixChangeEnabled
         ? {
@@ -523,10 +535,12 @@ export class ChangeAction extends BaseRushAction {
    * or will ask for it if it is not found or the Git config is wrong.
    */
   private async _detectOrAskForEmail(promptModule: inquirerTypes.PromptModule): Promise<string> {
+    console.log('->', 'ChangeAction _getBumpOptions');
     return (await this._detectAndConfirmEmail(promptModule)) || (await this._promptForEmail(promptModule));
   }
 
   private _detectEmail(): string | undefined {
+    console.log('->', 'ChangeAction _detectEmail');
     try {
       return child_process
         .execSync('git config user.email')
@@ -545,6 +559,7 @@ export class ChangeAction extends BaseRushAction {
   private async _detectAndConfirmEmail(
     promptModule: inquirerTypes.PromptModule
   ): Promise<string | undefined> {
+    console.log('->', 'ChangeAction _detectAndConfirmEmail');
     const email: string | undefined = this._detectEmail();
 
     if (email) {
@@ -566,6 +581,7 @@ export class ChangeAction extends BaseRushAction {
    * Asks the user for their email address
    */
   private async _promptForEmail(promptModule: inquirerTypes.PromptModule): Promise<string> {
+    console.log('->', 'ChangeAction _promptForEmail');
     const { email }: { email: string } = await promptModule([
       {
         type: 'input',
@@ -580,6 +596,7 @@ export class ChangeAction extends BaseRushAction {
   }
 
   private _warnUncommittedChanges(): void {
+    console.log('->', 'ChangeAction _warnUncommittedChanges');
     try {
       if (this._git.hasUncommittedChanges()) {
         console.log(
@@ -604,6 +621,7 @@ export class ChangeAction extends BaseRushAction {
     overwrite: boolean,
     interactiveMode: boolean
   ): Promise<void> {
+    console.log('->', 'ChangeAction _writeChangeFiles');
     await changeFileData.forEach(async (changeFile: IChangeFile) => {
       await this._writeChangeFile(promptModule, changeFile, overwrite, interactiveMode);
     });
@@ -615,6 +633,7 @@ export class ChangeAction extends BaseRushAction {
     overwrite: boolean,
     interactiveMode: boolean
   ): Promise<void> {
+    console.log('->', 'ChangeAction _writeChangeFile');
     const output: string = JSON.stringify(changeFileData, undefined, 2);
     const changeFile: ChangeFile = new ChangeFile(changeFileData, this.rushConfiguration);
     const filePath: string = changeFile.generatePath();
@@ -638,6 +657,7 @@ export class ChangeAction extends BaseRushAction {
     promptModule: inquirerTypes.PromptModule,
     filePath: string
   ): Promise<boolean> {
+    console.log('->', 'ChangeAction _promptForOverwrite');
     const overwrite: boolean = await promptModule([
       {
         name: 'overwrite',
@@ -658,6 +678,7 @@ export class ChangeAction extends BaseRushAction {
    * Writes a file to disk, ensuring the directory structure up to that point exists
    */
   private _writeFile(fileName: string, output: string, isOverwrite: boolean): void {
+    console.log('->', 'ChangeAction _writeFile');
     FileSystem.writeFile(fileName, output, { ensureFolderExists: true });
     if (isOverwrite) {
       console.log(`Overwrote file: ${fileName}`);
@@ -667,6 +688,7 @@ export class ChangeAction extends BaseRushAction {
   }
 
   private _logNoChangeFileRequired(): void {
+    console.log('->', 'ChangeAction _logNoChangeFileRequired');
     console.log('No changes were detected to relevant packages on this branch. Nothing to do.');
   }
 }

@@ -1,0 +1,1 @@
+{"version":3,"file":"variables.d.ts","sourceRoot":"","sources":["../../src/apiItemKinds/variables.ts"],"names":[],"mappings":"AAGA,cAAc;AACd,eAAO,MAAM,QAAQ,EAAE,MAAgB,CAAC;AAExC,cAAc;AACd,yBAAiB,2BAA2B,CAAC;IACpC,IAAI,QAAQ,EAAE,MAAM,EAAO,CAAC;IAE5B,IAAI,aAAa,EAAE,MAAM,EAAO,CAAC;CACzC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"LoadThemedStylesMock.d.ts","sourceRoot":"","sources":["../../../src/test/testData/LoadThemedStylesMock.ts"],"names":[],"mappings":"AAGA,cAAM,oBAAoB;IACxB,OAAc,UAAU,EAAE,MAAM,EAAE,CAAM;IACxC,OAAc,eAAe,EAAE,OAAO,EAAE,CAAM;WAEhC,UAAU,CAAC,IAAI,EAAE,MAAM,EAAE,KAAK,EAAE,OAAO,GAAG,IAAI;CAI7D;AAED,SAAS,oBAAoB,CAAC"}

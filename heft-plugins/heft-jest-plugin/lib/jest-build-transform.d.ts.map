@@ -1,0 +1,1 @@
+{"version":3,"file":"jest-build-transform.d.ts","sourceRoot":"","sources":["../src/jest-build-transform.ts"],"names":[],"mappings":"AAKA,OAAO,EAAE,yBAAyB,EAAE,MAAM,0BAA0B,CAAC;AACrE,OAAO,EAAE,iBAAiB,EAAE,MAAM,iBAAiB,CAAC;AA4BpD;;GAEG;AACH,wBAAgB,OAAO,CACrB,OAAO,EAAE,MAAM,EACf,WAAW,EAAE,MAAM,EACnB,WAAW,EAAE,yBAAyB,GACrC,iBAAiB,CA2JnB"}

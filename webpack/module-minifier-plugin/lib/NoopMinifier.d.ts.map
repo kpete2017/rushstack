@@ -1,0 +1,1 @@
+{"version":3,"file":"NoopMinifier.d.ts","sourceRoot":"","sources":["../src/NoopMinifier.ts"],"names":[],"mappings":"AAGA,OAAO,EACL,2BAA2B,EAC3B,0BAA0B,EAC1B,eAAe,EAChB,MAAM,8BAA8B,CAAC;AAEtC;;;GAGG;AACH,qBAAa,YAAa,YAAW,eAAe;IAClD;;;;OAIG;IACI,MAAM,CAAC,OAAO,EAAE,0BAA0B,EAAE,QAAQ,EAAE,2BAA2B,GAAG,IAAI;CAWhG"}
